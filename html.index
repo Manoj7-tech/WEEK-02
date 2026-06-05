@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Business Card</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: darkslategrey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            width: 350px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .profile-img {
+            width: 230px;
+            height: 230px;
+            border-radius: 330%;
+            object-fit: cover;
+            border: 6px solid steelblue;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333333; /* Dark gray requested for text color */
+            margin-bottom: 8px;
+        }
+
+        .title {
+            font-size: 14px;
+            color: blue;
+            font-weight: 1100;
+            text-transform: uppercase;
+            letter-spacing: 0px;
+            margin-bottom: 40px;
+        }
+
+        .bio {
+            font-size: 15px;
+            color: RED;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            text-align: left;
+            background-color: whitesmoke;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid steelblue;
+        }
+
+        .skills {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .skills {
+    display: flex;
+    justify-content: center;
+    gap: 19px;
+    flex-wrap: wrap; 
+}
+        .badge {
+            background-color: lightgray;
+            color: black;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img class="profile-img" src="2026300023_pariyarmanoj.jpeg" alt="Profile Picture">
+        
+        <h1>MANOJ PARIYAR </h1>
+        <div class="title">STUDENT <BR> SEOUL THEOLOGICAL UNIVERSITY</div>
+        
+        <p class="bio">
+            Welcome to my digital business card.
+        </p>
+        
+        <div class="skills">
+            <span class="badge">HTML</span>
+            <span class="badge">CSS</span>
+        </div>
+    </div>
+
+</body>
+</html>
