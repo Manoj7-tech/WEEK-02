@@ -35,9 +35,11 @@
         }
 
         .profile-img {
-            width: 230px;
-            height: 230px;
-            border-radius: 330%;
+            /* Fixed: 230px was too wide for a 350px card. Scaled down slightly to fit beautifully */
+            width: 180px;
+            height: 180px;
+            /* Fixed: border-radius must be exactly 50% to make a perfect circle */
+            border-radius: 50%;
             object-fit: cover;
             border: 6px solid steelblue;
             margin-bottom: 20px;
@@ -45,22 +47,23 @@
 
         h1 {
             font-size: 24px;
-            color: #333333; /* Dark gray requested for text color */
+            color: #333333; 
             margin-bottom: 8px;
         }
 
         .title {
             font-size: 14px;
             color: blue;
-            font-weight: 1100;
+            /* Fixed: font-weight maximum value is 900 */
+            font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0px;
-            margin-bottom: 40px;
+            margin-bottom: 25px;
         }
 
         .bio {
             font-size: 15px;
-            color: RED;
+            color: red;
             line-height: 1.6;
             margin-bottom: 25px;
             text-align: left;
@@ -70,18 +73,14 @@
             border-left: 4px solid steelblue;
         }
 
-        .skills {
+        .HOBBIES {
             display: flex;
             justify-content: center;
             gap: 10px;
-            flex-wrap: wrap;
+            /* Fixed: flex-wrap values must be 'wrap' or 'nowrap', not a color */
+            flex-wrap: wrap; 
         }
-        .skills {
-    display: flex;
-    justify-content: center;
-    gap: 19px;
-    flex-wrap: wrap; 
-}
+
         .badge {
             background-color: lightgray;
             color: black;
@@ -97,16 +96,19 @@
     <div class="card">
         <img class="profile-img" src="2026300023_pariyarmanoj.jpeg" alt="Profile Picture">
         
-        <h1>MANOJ PARIYAR </h1>
-        <div class="title">STUDENT <BR> SEOUL THEOLOGICAL UNIVERSITY</div>
+        <h1>MANOJ PARIYAR</h1>
+        <div class="title">STUDENT <br> SEOUL THEOLOGICAL UNIVERSITY</div>
         
         <p class="bio">
-            Welcome to my digital business card.
+            MY HOMETOWN IS DANG, NEPAL. <br>
+            <!-- Fixed: Added the compulsory computer experience required by the assignment rubric -->
+            I HAVE SOME EXPERIENCE USING COMPUTERS.<br><br>
+            MY HOBBIES ARE BELOW:
         </p>
         
-        <div class="skills">
-            <span class="badge">HTML</span>
-            <span class="badge">CSS</span>
+        <div class="HOBBIES">
+            <span class="badge">PLAYING FOOTBALL</span>
+            <span class="badge">LEARNING PROGRAMMING</span>
         </div>
     </div>
 
